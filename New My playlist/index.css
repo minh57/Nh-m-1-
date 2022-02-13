@@ -1,0 +1,23 @@
+.sidenav{
+    color: white;
+    background-color:black;
+    width:200px;
+    height: 500px;
+    display: inline-block
+    
+}
+.main {
+    background-color:rgb(80, 73, 73);
+    color: white;
+    float:right;
+}
+.player {
+    background-color:rgb(80, 73, 73);
+    color: white;
+}
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    
+}
