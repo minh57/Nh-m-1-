@@ -1,44 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet" />
-    <title>My playlist</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>My playlist</title>
 
 </head>
+
 <body>
-    <div class="sidenav">
-        <img>
-        <ul class="menu">
-            <li>Trang chủ</li>
-            <li>Tìm kiếm </li>
-            <li>Thư viện</li>
-            <li></li>
-            <li>Tạo playlist</li>
-            <li>Bài hát đã thích</li>
-        </ul>
+  <div class="sidenav">
+    <h1 style="padding-left: 30px; " class="icon">Nghe nhạc</h1>
+    <ul class="menu">
+      <li class="nav-iem">
+        <a href=""><i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">home</i> </a>
+      Trang chủ
+      </li>
+      <li class="nav-iem" >
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">search</i>
+       <label for="finding">Tìm kiếm</label>
+      </li>
+      <li class="nav-iem">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+            library_music
+            </i>
+        Thư viện
+        </li>
+      <li></li>
+      <li class="nav-iem" id="link">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+              add_box
+              </i> 
+                My playlist
+        </li>
+      <li class="nav-iem">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+            favorite
+         </i>  
+        Bài hát đã thích
+    </li>
+    </ul>
 
 
-    </div>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <div style="float: left;display: flex;padding: 50px;justify-content: space-between ; ">
+        <div class="left-btn">
+            <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114);border-radius: 40px; background-color: rgb(61, 54, 54);">
+                navigate_before
+             </i>  
+        </div>
+        <div class="right-btn">
+            <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114);border-radius: 40px; background-color: rgb(61, 54, 54);">
+                navigate_next
+            </i> 
+        </div>
+      </div>
+      <input id="finding" style="border-radius: 25px;background-color: rgb(245, 236, 236); color:rgb(16, 16, 17);height:40px;width: 500px" placeholder="Nhập tên bài hát,nghệ sĩ hoặc playlist">
+      <div style="float: right; display: flex;">
+        <div class="header-btn" id="myBtn">Nâng cấp </div>
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="color: black;font-size: 50px;">Chỉ với 99 000đ bạn có thể trở thành khách hàng VIP của chúng tôi</p>
+          </div>
+        
+        </div>
+       
+         
+        <div class="header-btn">Tài khoản</div>
+      </div>
     
-    <div class="main">
-        hello
     </div>
+
+    <div class="banner1">
+      <div style="display: flex; padding: 2rem;">
+        <div class="heart" class="material-icons" >
+            <i class="material-icons" style="vertical-align: middle;font-size:100px;color:rgb(39, 34, 34)">
+                music_note
+             </i>  
+        </div>
+        <div style="margin-left: 1rem; ">
+          <p style="font-size: 50px;">Playlist</p>
+          <h1 style="font-size: 70px;">Playlist của tôi</h1>
+          <p >Tên tài khoản</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner2">
+      <img src="" alt="">
+      <i class="material-icons" style="vertical-align: middle;font-size:50px;color:rgb(247, 241, 241)">
+        music_note
+     </i>  
+      <h1>Hãy chọn cho những bài hát yêu thích</h1>
+      <h5>Lưu bài hát của bạn</h5>
+      <a href="" id="search-song">Tim bai hat</a>
+    </div>
+ 
+ 
+ 
+ 
+    <div class="banner2"  ">
+    <p style="font-size: 50px;">Nhạc Âu Mỹ</p>
    
-    <div class="player">
-hi
+  <div >
+    <div class="banner2"  style="display: flex;">
+       
+         
+        <div >
+         
+        <div class="song">
+            <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/191001691_3721092507999624_1728367995747431614_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=2MWv6-AwgJ4AX9IO4lv&tn=k4L3AvX0pxJ0CMbF&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8d7SS5hTO1kqBYprd1s_VZqa5S3X1Z6nYtk_7XjoIJCA&oe=622E670D" style="width: 150px;height: 150px;">
+            <p>Tuyển tập 1</p>
+          </div>
+      </div>
+    
+      <div>
+         
+        <div class="song" >
+            <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+            <p>Tuyển tập 2</p>
+          </div>
+      </div>
+    
+      <div>
+      <div class="song" >
+        <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 2</p>
+      </div>
+  
+    </div>
+ 
+    <div>
+      <div class="song" >
+        <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 2</p>
+      </div>
+  
+    </div>
+
+    <div>
+      <div class="song" >
+        <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 2</p>
+      </div>
+  
+    </div>
+
+  </div>
+
+</div>
+
+<div class="banner2" >
+  <p style="font-size: 50px;">Nhạc Việt</p>
+ </div>
+<div >
+ <div class="banner2"  style="display: flex;">
+  
+   
+    <div >
+     
+    <div class="song">
+        <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/191001691_3721092507999624_1728367995747431614_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=2MWv6-AwgJ4AX9IO4lv&tn=k4L3AvX0pxJ0CMbF&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8d7SS5hTO1kqBYprd1s_VZqa5S3X1Z6nYtk_7XjoIJCA&oe=622E670D" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 1</p>
+      </div>
+  </div>
+  
+  <div>
+     
+    <div class="song" >
+        <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 2</p>
+      </div>
+  </div>
+  
+  <div class="song" >
+    <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 2</p>
+  </div>
+  
+  <div class="song" >
+    <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 2</p>
+  </div>
+  
+  <div class="song" >
+    <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 2</p>
+  </div>
+</div>
+</div>
+
+<div class="banner2"  >
+  <p style="font-size: 50px;">Nhạc Hàn</p>
+ 
+<div >
+<div class="banner2"  style="display: flex;">
+  
+   
+  <div >
+   
+  <div class="song">
+      <img src="https://scontent.fhan2-3.fna.fbcdn.net/v/t1.6435-9/191001691_3721092507999624_1728367995747431614_n.jpg?_nc_cat=107&ccb=1-5&_nc_sid=730e14&_nc_ohc=2MWv6-AwgJ4AX9IO4lv&tn=k4L3AvX0pxJ0CMbF&_nc_ht=scontent.fhan2-3.fna&oh=00_AT8d7SS5hTO1kqBYprd1s_VZqa5S3X1Z6nYtk_7XjoIJCA&oe=622E670D" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 1</p>
+    </div>
+</div>
+
+<div>
+   
+  <div class="song" >
+      <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 2</p>
+    </div>
+</div>
+<div>
+<div class="song" >
+  <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+  <p>Tuyển tập 2</p>
+</div>
+
+</div>
+
+<div>
+  <div class="song" >
+    <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 2</p>
+  </div>
+  
+  </div>
+  
+  <div>
+    <div class="song" >
+      <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 2</p>
     </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="index.js"></script>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+  <script src="index.js"></script>
 </body>
+
 </html>
+<!-- Xanh:148 202 189
+  Hồng: -->
