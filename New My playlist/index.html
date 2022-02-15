@@ -1,44 +1,258 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="index.css" rel="stylesheet" />
-    <title>My playlist</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="index.css" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <title>My playlist</title>
 
 </head>
+
 <body>
-    <div class="sidenav">
-        <img>
-        <ul class="menu">
-            <li>Trang chủ</li>
-            <li>Tìm kiếm </li>
-            <li>Thư viện</li>
-            <li></li>
-            <li>Tạo playlist</li>
-            <li>Bài hát đã thích</li>
-        </ul>
+  <div class="sidenav">
+    <h1 style="padding-left: 30px; " class="icon">Nghe nhạc</h1>
+    <ul class="menu">
+      <li class="nav-iem">
+        <a href=""><i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">home</i> </a>
+      Trang chủ
+      </li>
+      <li class="nav-iem" >
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">search</i>
+       <label for="finding">Tìm kiếm</label>
+      </li>
+      <li class="nav-iem">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+            library_music
+            </i>
+        Thư viện
+        </li>
+      <li></li>
+      <li class="nav-iem" id="link">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+              add_box
+              </i> 
+                My playlist
+        </li>
+      <li class="nav-iem">
+        <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114)">
+            favorite
+         </i>  
+        Bài hát đã thích
+    </li>
+    </ul>
 
 
-    </div>
+  </div>
+
+  <div class="main">
+    <div class="header">
+      <div style="float: left;display: flex;padding: 50px;justify-content: space-between ; ">
+        <div class="left-btn">
+            <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114);border-radius: 40px; background-color: rgb(61, 54, 54);">
+                navigate_before
+             </i>  
+        </div>
+        <div class="right-btn">
+            <i class="material-icons" style="vertical-align: middle;font-size:36x;color:rgb(119, 114, 114);border-radius: 40px; background-color: rgb(61, 54, 54);">
+                navigate_next
+            </i> 
+        </div>
+      </div>
+      <input id="finding" style="border-radius: 25px;background-color: rgb(245, 236, 236); color:rgb(16, 16, 17);height:40px;width: 500px" placeholder="Nhập tên bài hát,nghệ sĩ hoặc playlist">
+      <div style="float: right; display: flex;">
+        <div class="header-btn" id="myBtn">Nâng cấp </div>
+        <div id="myModal" class="modal">
+
+          <!-- Modal content -->
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p style="color: black;font-size: 50px;">Chỉ với 99 000đ bạn có thể trở thành khách hàng VIP của chúng tôi</p>
+          </div>
+        
+        </div>
+       
+         
+        <div class="header-btn">Tài khoản</div>
+      </div>
     
-    <div class="main">
-        hello
     </div>
+
+    <div class="banner1">
+      <div style="display: flex; padding: 2rem;">
+        <div class="heart" class="material-icons" >
+            <i class="material-icons" style="vertical-align: middle;font-size:100px;color:rgb(39, 34, 34)">
+                music_note
+             </i>  
+        </div>
+        <div style="margin-left: 1rem; ">
+          <p style="font-size: 50px;">Playlist</p>
+          <h1 style="font-size: 70px;">Playlist của tôi</h1>
+          <p >Tên tài khoản</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="banner2">
+      <img src="" alt="">
+      <i class="material-icons" style="vertical-align: middle;font-size:50px;color:rgb(247, 241, 241)">
+        music_note
+     </i>  
+      <h1>Hãy chọn cho những bài hát yêu thích</h1>
+      <h5>Lưu bài hát của bạn</h5>
+      <a href="" id="search-song">Tim bai hat</a>
+    </div>
+ 
+ 
+ 
+ 
+    <div class="banner2"  >
+    <p style="font-size: 50px;">Nhạc Âu Mỹ</p>
+   </div>
+  <div >
+    <div class="banner2"  style="display: flex;">
+       
+         
+        <div >
+         
+        <div class="song">
+            <img src="https://www.nydailynews.com/resizer/G1lmgqyX_5OnyAgpe8MeMU9_IUk=/415x311/top/cloudfront-us-east-1.images.arcpublishing.com/tronc/YYCBKSTA5BFTDAZPDVYZTJ4H3Q.jpg" style="width: 150px;height: 150px;">
+            <p>Tuyển tập 1</p>
+          </div>
+      </div>
+    
+      <div>
+         
+        <div class="song" >
+            <img src="https://icdn.dantri.com.vn/thumb_w/660/2021/10/04/the-weekndeoline-1633335325012.jpeg" style="width: 150px;height: 150px;">
+            <p>Tuyển tập 2</p>
+          </div>
+      </div>
+    
+      <div>
+      <div class="song" >
+        <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Billie_Eilish_2019_by_Glenn_Francis_%28cropped%29_2.jpg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 3</p>
+      </div>
+  
+    </div>
+ 
+    <div>
+      <div class="song" >
+        <img src="https://i.ytimg.com/an/3AtDnEC4zak/fd1a8d6f-80e0-4b35-8393-3cdd77cbfdbd_mq.jpg?v=5afca9b0" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 4</p>
+      </div>
+  
+    </div>
+
+    <div>
+      <div class="song" >
+        <img src="https://photo-resize-zmp3.zadn.vn/w240_r1x1_jpeg/avatars/5/c/4/7/5c476cddb2119428bfec8fe7e1b55011.jpg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 5</p>
+      </div>
+  
+    </div>
+
+  </div>
+
+</div>
+
+<div class="banner2" >
+  <p style="font-size: 50px;">Nhạc Việt</p>
+ </div>
+<div >
+ <div class="banner2"  style="display: flex;">
+  
    
-    <div class="player">
-hi
+    <div >
+     
+    <div class="song">
+        <img src="https://yt3.ggpht.com/ytc/AKedOLRiNLpNM5_PlcLA2_jxBPwtD7BgqToCWim61mSQ=s900-c-k-c0x00ffffff-no-rj" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 1</p>
+      </div>
+  </div>
+  
+  <div>
+     
+    <div class="song" >
+        <img src="https://danviet.mediacdn.vn/upload/2-2019/images/2019-04-02/Vi-sao-Kha-Banh-tro-thanh-hien-tuong-dinh-dam-tren-mang-xa-hoi-khabanh-1554192528-width660height597.jpg" style="width: 150px;height: 150px;">
+        <p>Tuyển tập 2</p>
+      </div>
+  </div>
+  
+  <div class="song" >
+    <img src="https://photo-resize-zmp3.zadn.vn/w360_r1x1_jpeg/avatars/8/e/3/a/8e3a8a9490794d57c604275b7edfd981.jpg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 3</p>
+  </div>
+  
+  <div class="song" >
+    <img src="https://suckhoedoisong.qltns.mediacdn.vn/324455921873985536/2022/1/25/bich-phuong-1-1643113353899263889600.jpg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 4</p>
+  </div>
+  
+  <div class="song" >
+    <img src="https://afamilycdn.com/150157425591193600/2022/2/11/b-ray-1644592337746998228945.jpg" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 5</p>
+  </div>
+</div>
+</div>
+
+<div class="banner2"  >
+  <p style="font-size: 50px;">Nhạc Hàn</p>
+ 
+<div >
+<div class="banner2"  style="display: flex;">
+  
+   
+  <div >
+   
+  <div class="song">
+      <img src="https://cdnmedia.thethaovanhoa.vn/Upload/leenEplQKY7jsunvYUYgg/files/2019/12/izone1.jpg" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 1</p>
+    </div>
+</div>
+
+<div>
+   
+  <div class="song" >
+      <img src="https://bloganchoi.com/wp-content/uploads/2020/05/going-crazy.jpg" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 2</p>
+    </div>
+</div>
+<div>
+<div class="song" >
+  <img src="https://media-cdn.laodong.vn/storage/newsportal/2021/12/17/985636/Tan-Binh-Ive-Tiep-Tu.jpg?w=414&h=276&crop=auto&scale=both" style="width: 150px;height: 150px;">
+  <p>Tuyển tập 3</p>
+</div>
+
+</div>
+
+<div>
+  <div class="song" >
+    <img src="data:image/jpeg;base64,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" style="width: 150px;height: 150px;">
+    <p>Tuyển tập 4</p>
+  </div>
+  
+  </div>
+  
+  <div>
+    <div class="song" >
+      <img src="https://i.pinimg.com/originals/de/b9/d4/deb9d4887f03f2722591d42e76c94a86.png" style="width: 150px;height: 150px;">
+      <p>Tuyển tập 5</p>
     </div>
     
-    
-    
-    
-    
-    
-    
-    
-    
-    <script src="index.js"></script>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+ 
+  <script src="index.js"></script>
 </body>
+
 </html>
+<!-- Xanh:148 202 189
+  Hồng: -->
