@@ -27,3 +27,7 @@ window.onclick = function(event) {
     modal.style.display = "none";
   }
 }
+const acc = document.getElementById("account")
+acc.addEventListener("click",function(){
+  window.location.href = `../login/index.html`
+})
